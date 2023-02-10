@@ -1,0 +1,3 @@
+Run ./QGroundControl.AppImage
+Run ./ardupilot/waf copter (only once)
+Run ./ardupilot/ArduCopter/sim_vehicle.py -v ArduCopter
