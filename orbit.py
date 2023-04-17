@@ -26,7 +26,6 @@ def iter(d1, d2):
 	phase += 0.05
 	# d2+=v2
 	return target
-
 	
 # reset plt
 for i in range(100):
