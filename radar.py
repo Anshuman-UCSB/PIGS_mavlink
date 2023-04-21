@@ -25,9 +25,7 @@ class Manager:
 		self.center = center
 	def iter(self):
 		phase = (self.drones[0].phase+90)%360
-		# TODO: add target position
 		virtual_target = self.center + self.radius*1.5*np.array([np.cos(phase*np.pi/180),np.sin(phase*np.pi/180)])
-		# print(virtual_target)
 		for d in self.drones:
 			d.iter(self.timestep, self.center)
 			xy = virtual_target - d.pos
